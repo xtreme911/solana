@@ -61,7 +61,7 @@ rm -rf ~/.local/share/solana/install/active_release
 wait
 mkdir -p ~/.local/share/solana/install/active_release
 wait
-/usr/local/src/solana/scripts/cargo-install-all.sh ~/.local/share/solana/install/active_release
+~/solana/scripts/cargo-install-all.sh ~/.local/share/solana/install/active_release
 wait
 
 echo ''
