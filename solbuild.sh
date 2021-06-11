@@ -26,18 +26,27 @@ if [ "$EUID" -eq "0" ] ; then
     exit 1 
 fi
 
+if [ -z "$1" ]
+then
+    echo ''
+    echo ''
+    echo 'ERROR: YOU DID NOT ENTER THE VERSION THAT YOU WANT TO COMPILE LIKE THIS 1.7.1'
+    echo ''
+    echo 'SO NOW IN ORDER TO RUN THIS SCRIPT FOR VERSION 1.7.1 YOU WOULD ENTER THIS:'
+    echo ''
+    echo '           solbuild.sh 1.7.1'
+    echo ''
+    echo ''
+    exit 1
+fi
+
 echo ''
-echo ''
-echo ''
-echo 'WARNING THIS FILE MUST BE RUN AS THE SAME USERNAME THAT YOU RUN THE SOLANA-VALIDATOR WITH'
-echo ''
-echo 'IF YOU ARE RUNNING THIS AS ROOT IT WILL FAIL AND NOT WORK RIGHT'
 echo ''
 echo 'IF YOU ARE NOT RUNNING THIS AS THE SOLANA USER PRESS CONTROL-C TO QUIT NOW'
 echo ''
-echo 'OTHERWISE IF YOU ARE READY TO GO AND RUNNING AS THE SOL VALIDATOR USERNAME'
+echo 'OTHERWISE IF YOU ARE READY TO GO AND RUNNING AS THE SOLANA VALIDATOR USERNAME'
 echo ''
-echo 'WE TRY AND INSTALL NEEDED FILES IN UBUNTU WITH APTITUDE BUT IF IT FAILS LOG IN AS ROOT AND RUN THIS:'
+echo 'LOG IN AS ROOT ON A SECOND TERMINAL AND RUN THIS:'
 echo ''
 echo 'apt-get update'
 echo ''
@@ -45,11 +54,14 @@ echo 'AND THEN RUN THIS AS ROOT:'
 echo ''
 echo 'apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang make'
 echo ''
-echo 'PRESS ANY KEY TO BEGIN'
+echo ''
+echo ''
+echo 'AFTER YOU FINISH RUNNING THE apt-get COMMANDS ON THE SECOND TERMINAL'
+echo ''
+echo 'THEN RETURN TO THIS TERMINAL AND PRESS ANY KEY TO BEGIN COMPILING SOLANA'
+echo ''
+echo ''
 read x
-sudo apt-get update
-wait
-sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang make
 wait
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wait
