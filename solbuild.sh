@@ -53,9 +53,9 @@ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang mak
 wait
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wait
-rm -rf /usr/local/src/solana/*
+rm -rf ~/solana/*
 wait
-git clone https://github.com/solana-labs/solana.git --branch v$1 /usr/local/src/solana
+git clone https://github.com/solana-labs/solana.git --branch v$1 ~/solana
 wait
 rm -rf ~/.local/share/solana/install/active_release
 wait
