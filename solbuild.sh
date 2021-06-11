@@ -1,6 +1,6 @@
 #!/bin/sh
 ###############################################################################
-# README: YOU MUST INDICATE THE VERSION VERSION ON THE COMMAND LINE THAT YOU WANT
+# README: YOU MUST INDICATE THE VERSION ON THE COMMAND LINE THAT YOU WANT
 # TO INSTALL SO IF YOU WANT V1.7.1 ON THE COMMAND YOU ENTER 
 #
 #                           solbuild.sh 1.7.1
