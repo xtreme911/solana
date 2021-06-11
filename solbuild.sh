@@ -6,14 +6,6 @@
 #                           solbuild.sh 1.7.1
 #
 ###############################################################################
-#if (!( $EUID != 0 )); then
- #   echo ''
- #   echo ''
- #   echo "DO NOT RUN THIS AS ROOT"
- #   echo ''
- #   echo ''
- #   exit
-#fi
 
 if [ "$EUID" -eq "0" ] ; then 
     echo '****************************'
