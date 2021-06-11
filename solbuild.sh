@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ###############################################################################
 # README: YOU MUST INDICATE THE VERSION ON THE COMMAND LINE THAT YOU WANT
 # TO INSTALL SO IF YOU WANT V1.7.1 ON THE COMMAND YOU ENTER 
@@ -14,6 +14,17 @@
  #   echo ''
  #   exit
 #fi
+
+if [ "$EUID" -eq "0" ] ; then 
+    echo '****************************'
+    echo ''
+    echo "    DO NOT RUN AS ROOT" 
+    echo ''
+    echo '   TERMINATING EXECUTION'
+    echo ''
+    echo '****************************'
+    exit 1 
+fi
 
 echo ''
 echo ''
@@ -42,13 +53,13 @@ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang mak
 wait
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wait
-git clone https://github.com/solana-labs/solana.git --branch v$1 
+git clone https://github.com/solana-labs/solana.git --branch v$1 /usr/local/src/solana
 wait
 rm -rf ~/.local/share/solana/install/active_release
 wait
 mkdir -p ~/.local/share/solana/install/active_release
 wait
-/usr/local/src/solana1.7.1/scripts/cargo-install-all.sh ~/.local/share/solana/install/active_release
+/usr/local/src/solana/scripts/cargo-install-all.sh ~/.local/share/solana/install/active_release
 wait
 
 echo ''
