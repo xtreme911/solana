@@ -67,7 +67,6 @@ rm -rf ~/.local/share/solana/install/active_release
 wait
 mkdir -p ~/.local/share/solana/install/active_release
 wait
-export RUSTFLAGS="-C target-cpu=znver2"
 ~/solana/scripts/cargo-install-all.sh ~/.local/share/solana/install/active_release
 wait
 
