@@ -30,7 +30,8 @@ YOUR sol.service FILE IS LOCATED AT
 
     /etc/systemd/system/sol.service
 
-LOOK IN THE sol.service FILE AND USE THE USERNAME ON THE LINE THAT SAYS User=sol
+LOOK IN THE sol.service FILE AND USE THE USERNAME ON THE LINE THAT SAYS:
 
+    User=sol 
+    
 SO IN THIS CASE THE USERNAME IS sol IN ALL LOWER CASE LETTERS
-
