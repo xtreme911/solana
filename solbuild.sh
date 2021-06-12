@@ -20,7 +20,7 @@ fi
 
 if [ -z "$1" ]
 then
-    echo ''
+    echo '*****************************************************************************'
     echo ''
     echo 'ERROR: YOU DID NOT ENTER THE VERSION THAT YOU WANT TO COMPILE LIKE THIS 1.7.1'
     echo ''
@@ -28,7 +28,7 @@ then
     echo ''
     echo '           solbuild.sh 1.7.1'
     echo ''
-    echo ''
+    echo '*****************************************************************************'
     exit 1
 fi
 
