@@ -18,7 +18,7 @@ INSTALL THE PACKAGES BY RUNNING THESE TWO COMMANDS AS ROOT:
 
     apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang make
                 
-THEN LOG IN AS YOUR SOLANA USERNAME OR USER su COMMAND LIKE THIS
+THEN LOG IN AS YOUR SOLANA USERNAME OR USE THE su COMMAND LIKE THIS AS ROOT USER:
 
     su <solana username>
 
