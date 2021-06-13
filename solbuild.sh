@@ -59,6 +59,8 @@ read x
 wait
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wait
+source ~/.cargo/env
+wait
 rm -rf ~/solana
 wait
 git clone https://github.com/solana-labs/solana.git --branch v$1 ~/solana
