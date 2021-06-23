@@ -6,6 +6,8 @@ TO FIND OUT WHAT ARCHITECTURE YOUR CPU HAS THEN GO TO THE SERVER YOU ARE BUILDIN
 
 FIRST INSTALL RUST IF YOU HAVE NOT ALREADY
 
+    apt update && apt upgrade && apt install libudev-dev 
+    
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 NOW RUN THIS RUSTC COMMAND TO READ THE OUTPUT IN CONSOLE
