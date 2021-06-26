@@ -10,6 +10,10 @@ FIRST INSTALL RUST IF YOU HAVE NOT ALREADY
     
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+NOW BE SURE TO SOURCE YOUR ENVIRONMENT VARIABLE SO YOUR PATH ENVIRONMENT VARIABLE HAS THE CARGO BIN DIRECTORY
+
+    source ~/.cargo/env
+    
 NOW RUN THIS RUSTC COMMAND TO READ THE OUTPUT IN CONSOLE
 
     rustc --target=x86_64-unknown-linux-gnu --print target-cpus
