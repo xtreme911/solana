@@ -53,8 +53,8 @@ RUN
 
 ADD THIS TO FILE
 
-# Increase process file descriptor count limit
-* - nofile 700000
+    # Increase process file descriptor count limit
+    * - nofile 700000
     
 THEN LOGOUT AND LOGIN
 
