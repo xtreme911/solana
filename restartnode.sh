@@ -24,7 +24,6 @@ then
     echo 'AND THE THIRD PARAMETER IS THE SOL.SERVICE FILE PREFIX TO RESTART SOLANA'
     echo ''
     echo '    SO COMMAND SHOULD LOOK LIKE THIS FOR USERNAME sol LEDGER DIR /ledger AND SOL SERVICE NAME OF solana.service'
-    
     echo ''
     echo '                restartnode.sh /ledger sol solana'
     echo ''
