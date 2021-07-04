@@ -34,8 +34,8 @@ fi
 mkdir -p /tmp/sol
 rm -rf /tmp/sol/*
 systemctl stop $3
-mv /$1/snapshot* /tmp/sol/
+mv $1/snapshot* /tmp/sol/
 rm -rf /$1
-mv /tmp/sol /$1
-chown -R $2:$2 /$1
+mv /tmp/sol $1
+chown -R $2:$2 $1
 systemctl start $3
