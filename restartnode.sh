@@ -26,7 +26,7 @@ then
     echo '    SO COMMAND SHOULD LOOK LIKE THIS FOR USERNAME sol LEDGER DIR /ledger AND SOL SERVICE NAME OF solana.service'
     
     echo ''
-    echo '                restartbide.sh /ledger sol solana'
+    echo '                restartnode.sh /ledger sol solana'
     echo ''
     echo '*****************************************************************************'
     exit 1
