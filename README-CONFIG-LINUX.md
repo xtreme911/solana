@@ -71,4 +71,4 @@ EDIT /etc/logrotate.d/rsyslog AND CHANGE TO SIZE=500M
     
 RESTART LOGROTATE
 
-    root@sa: ~ # systemctl restart logrotate
+    systemctl restart logrotate
