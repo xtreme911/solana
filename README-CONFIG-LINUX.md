@@ -59,16 +59,3 @@ ADD THIS TO FILE
 THEN LOGOUT AND LOGIN
 
 
-MOVE LOGROTATE TO CRON.HOURLY
-
-     mv /etc/cron.daily/logrotate /etc/cron.hourly/
-
-EDIT /etc/logrotate.d/rsyslog AND CHANGE TO SIZE=500M
-
-    nano /etc/logrotate.d/rsyslog
-    
-    CHANGE daily TO size=500M
-    
-RESTART LOGROTATE
-
-    systemctl restart logrotate
